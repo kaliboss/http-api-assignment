@@ -15,7 +15,9 @@
       const type = xhr.getResponseHeader('content-type');
 	  
 	  //grab the content section
-      const content = document.querySelector("#content");
+      let content = document.querySelector("#content");
+	  
+	  content.innerHTML = "";
       
 	  //create h1 and p to hold our response data for the page
       const h1 = document.createElement('h1');
